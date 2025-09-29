@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3505557836005771923}
   - component: {fileID: 8267726096342754114}
   - component: {fileID: 4191969850730735858}
-  - component: {fileID: -1893225052143410184}
   - component: {fileID: 6276119312454826267}
   - component: {fileID: -349174223821146378}
+  - component: {fileID: -503800524549676905}
   m_Layer: 8
   m_Name: Bullet_Blue
   m_TagString: Untagged
@@ -199,21 +199,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &-1893225052143410184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3744805283688735882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bffb2ca3f4088a4e8b973b137e832eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  autoDestroyTime: 15
-  hitParticle: {fileID: 4098902514106950024, guid: 78b20e4b3fb6cf44784a3a33630ed8b0, type: 3}
 --- !u!136 &6276119312454826267
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -264,3 +249,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-503800524549676905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3744805283688735882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f48f09b265ef1143b440e12930200b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 10
+  rb: {fileID: -349174223821146378}
+  speed: 10
+  autoDestroyTime: 15
+  hitParticle: {fileID: 4098902514106950024, guid: 78b20e4b3fb6cf44784a3a33630ed8b0, type: 3}
