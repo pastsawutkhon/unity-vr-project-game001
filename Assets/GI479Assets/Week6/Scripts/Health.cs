@@ -3,12 +3,12 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    public float MaxHealth;
+    public float MaxHealth = 100;
 
     public UnityEvent OnTakeDamage;
     public UnityEvent OnDead;
 
-    private float currentHealth;
+    public float currentHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
